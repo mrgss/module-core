@@ -1,0 +1,2 @@
+script:
+  - "ruby run_build.rb"
