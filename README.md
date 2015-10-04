@@ -1,4 +1,1 @@
-C and Ruby Extension Example
-=========
-
-This is an example gem which implements a C and Ruby extension.
+[![Build Status](https://travis-ci.org/mrgss/module-core.svg?branch=travis-test)](https://travis-ci.org/mrgss/module-core)
