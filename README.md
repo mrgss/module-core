@@ -1,4 +1,2 @@
-C and Ruby Extension Example
-=========
+[![Build Status][build-status-img]][travis-ci]
 
-This is an example gem which implements a C and Ruby extension.
