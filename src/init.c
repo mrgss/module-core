@@ -4,6 +4,7 @@
 #include <mruby/variable.h>
 #include <stdio.h>
 #include <string.h>
+#include <mrgss.h>
 
 void
 mrb_mrgss_core_gem_init(mrb_state *mrb) {

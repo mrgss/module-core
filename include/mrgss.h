@@ -6,7 +6,7 @@
 #ifdef	__cplusplus
 extern "C" {
 #endif
-       
+    void mrb_mrgss_core_gem_init(mrb_state *mrb);
     struct RClass* mrgss_get_module(mrb_state* mrb);
     struct RClass* mrgss_create_class(mrb_state *mrb, const char *name);
     struct RClass* mrgss_get_class(mrb_state *mrb, const char *name);
