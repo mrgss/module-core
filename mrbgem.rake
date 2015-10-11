@@ -1,4 +1,4 @@
-MRuby::Gem::Specification.new('mrgss-core') do |spec|
+MRuby::Gem::Specification.new('mrgss_core') do |spec|
   spec.license = 'MIT'
   spec.authors = 'mrgss developers'
   

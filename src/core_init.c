@@ -1,12 +1,7 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
 #include <mruby.h>
-#include <mruby/data.h>
-#include <mruby/class.h>
-#include <mruby/variable.h>
-#include <stdio.h>
-#include <string.h>
-#include <mrgss.h>
+#include <mrgss/mrgss.h>
 
 static struct RClass *mrgss;
 
