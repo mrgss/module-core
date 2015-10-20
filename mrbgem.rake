@@ -3,6 +3,7 @@ MRuby::Gem::Specification.new('mrgss_core') do |spec|
   spec.authors = 'mrgss developers'
   spec.mruby.cc.defines << "GLEW_STATIC"
 	if ENV['OS'] == 'Windows_NT'
+		spec.mruby.cc.flags << "--static"
 		spec.mruby.linker.library_paths.push("#{File.dirname(__FILE__)}/lib/win")
 		spec.linker.libraries << 'glew32'
 		spec.linker.libraries << 'Ws2_32'
@@ -15,6 +16,11 @@ MRuby::Gem::Specification.new('mrgss_core') do |spec|
 		spec.linker.libraries << 'kazmath'
 		spec.linker.libraries << 'freetype'
 		spec.linker.libraries << 'jpeg'
+		
+		spec.linker.libraries << 'webp'
+		
+		spec.linker.libraries << 'tiff'
+		spec.linker.libraries << 'tiffxx'
 		spec.linker.libraries << 'png'
 		spec.linker.libraries << 'png16'
 		spec.linker.libraries << 'turbojpeg'
@@ -31,6 +37,7 @@ MRuby::Gem::Specification.new('mrgss_core') do |spec|
 		spec.linker.libraries << 'shell32'
 		spec.linker.libraries << 'version'
 		spec.linker.libraries << 'uuid'
+		spec.linker.libraries << 'lzma'
 		spec.linker.libraries << 'z'
 	else
 		spec.mruby.cc.flags << "--static"
